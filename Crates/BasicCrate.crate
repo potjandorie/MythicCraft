@@ -1,0 +1,48 @@
+enabled: true
+obtain-method: DYNAMIC
+inventory-name: Super basic crate
+
+display:
+  type: Block
+
+crate:
+  material: CHEST
+  name: '&7&lCrate &3&l>> &eBasic Crate'
+  glow: false
+  amount: 1
+
+key:
+  require: false
+  material: TRIPWIRE_HOOK
+  name: '&7&lKey &3&l>> &eBasic Crate'
+  glow: false
+  amount: 1
+
+rewards:
+- Diamond
+- Dirt
+
+open:
+  crate-animation: GIVE_KEY
+
+  tier-actions-override-defaults: false
+cooldown: 0
+cost: -1
+allow-skip-animation: false
+hologram-offset: 0.0
+auto-close: true
+hologram:
+  lines:
+  - '&a&lBasic &f&lCrate'
+  - '&7Left-Click to preview'
+  - '&7Right-Click to open'
+  animation:
+    prefixes: []
+    type: NONE
+    speed: 20
+  reward-hologram: ''
+  reward-hologram-duration: 60
+  reward-hologram-yoffset: 0.0
+reward-display:
+  type: BLOCK
+  require-permission: false
